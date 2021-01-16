@@ -4,6 +4,8 @@ project(async)
 
 add_definitions(-std=gnu++17 -U__STRICT_ANSI__)
 
+SET(CMAKE_CXX_FLAGS -pthread)
+
 set(LINKER_FLAGS1 -lcygwin)
 set(LINKER_FLAGS2 -lSDL2main)
 set(LINKER_FLAGS3 -lSDL2)
